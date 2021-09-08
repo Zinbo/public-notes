@@ -117,7 +117,7 @@ We can conver the bear to 2 chars properly like so:
 ```java
 public class Emojis4J {
     public static void main(String[] args) {
-        String bear = "BEARCHANGEME";
+        String bear = "🐻";
         int bearCodepoint = bear.codePointAt(bear.offsetCodePoints(0, 0));
         char[] bearSurrogates = {Character.highSurrogate(bearCodepoint), Character.lowSurrogate(bearCodepoint)};
         System.out.println("Bear in surrogate and code point for:" + String.valueOf(bearSurrogates));
